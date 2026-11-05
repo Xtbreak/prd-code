@@ -11,7 +11,7 @@
 
 一个本地运行的 Agent 产品推导引擎。它不替你写代码，而是先把「该做什么、该用哪些机制、哪里还没想清楚」推导清楚，交给你自己的 AI 编程工具去写骨架，再对照 PRD 验收，陪你一轮轮把骨架做对。
 
-[![Test](https://github.com/hubooooooo/agent-workshop/actions/workflows/test.yml/badge.svg)](https://github.com/hubooooooo/agent-workshop/actions/workflows/test.yml)
+[![Test](https://github.com/Xtbreak/agent-workshop/actions/workflows/test.yml/badge.svg)](https://github.com/Xtbreak/agent-workshop/actions/workflows/test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB.svg)](https://www.python.org/downloads/)
 
@@ -27,11 +27,11 @@
 
 <table>
 <tr><th align="left" width="16%"><img src="docs/images/spacer.png" width="2000" height="1" align="left" alt="">名称</th><th align="left" width="40%">是什么</th><th align="left" width="22%">适合</th><th align="left" width="22%">下载</th></tr>
-<tr><td><b>教学版</b></td><td>没有网页界面：项目文件夹、Python 引擎和命令行。用 AI 编程工具打开文件夹，让它全局阅读项目，再按引导一步步带你做到骨架验收</td><td>课堂上跟着老师学，看清项目里有什么、每一步怎么跑起来</td><td><a href="https://github.com/hubooooooo/agent-workshop/releases/tag/teaching">下载</a> · <a href="https://github.com/hubooooooo/agent-workshop/tree/v1-maint">浏览源码</a></td></tr>
-<tr><td><b>网页版</b>（本页）</td><td>在教学版的基础上加了本地网页界面：对话式新建产品、回答问题、试玩、导出交接包、检查外部项目</td><td>想直接用的普通用户：下载后双击启动，在网页上操作</td><td><a href="https://github.com/hubooooooo/agent-workshop/releases/latest">下载</a></td></tr>
+<tr><td><b>教学版</b></td><td>没有网页界面：项目文件夹、Python 引擎和命令行。用 AI 编程工具打开文件夹，让它全局阅读项目，再按引导一步步带你做到骨架验收</td><td>课堂上跟着老师学，看清项目里有什么、每一步怎么跑起来</td><td><a href="https://github.com/Xtbreak/agent-workshop/releases/tag/teaching">下载</a> · <a href="https://github.com/Xtbreak/agent-workshop/tree/v1-maint">浏览源码</a></td></tr>
+<tr><td><b>网页版</b>（本页）</td><td>在教学版的基础上加了本地网页界面：对话式新建产品、回答问题、试玩、导出交接包、检查外部项目</td><td>想直接用的普通用户：下载后双击启动，在网页上操作</td><td><a href="https://github.com/Xtbreak/agent-workshop/releases/latest">下载</a></td></tr>
 </table>
 
-两个版本都下载到自己电脑上运行，不是网站。教学版由 AI 在终端里运行命令，用法看[教学版的 README](https://github.com/hubooooooo/agent-workshop/blob/v1-maint/README.md)「课堂上这样用」；网页版双击 `启动界面.command`，第一次双击如果被 macOS 拦下，看[常见问题](#常见问题)。
+两个版本都下载到自己电脑上运行，不是网站。教学版由 AI 在终端里运行命令，用法看[教学版的 README](https://github.com/Xtbreak/agent-workshop/blob/v1-maint/README.md)「课堂上这样用」；网页版双击 `启动界面.command`，第一次双击如果被 macOS 拦下，看[常见问题](#常见问题)。
 
 ## 它能帮你做什么
 
@@ -339,7 +339,7 @@ macOS 14 及更早的版本更简单：按住 Control 键点启动文件，选�
 <tr><td><a href="使用引导.md">使用引导.md</a></td><td>用户入口：任务模板、产品循环、给 AI 的执行规则</td></tr>
 <tr><td><a href="BLUEPRINT.md">BLUEPRINT.md</a></td><td>五步推导、五要素、七层架构与组件选型表</td></tr>
 <tr><td><a href="blueprint/">blueprint/</a></td><td>引擎：需求拆解、规则选型、方案渲染、源码扫描、产品工作区；<code>agent.py</code> 是 agent 循环，<code>intake_agent.py</code>、<code>plan_agent.py</code>、<code>audit_agent.py</code> 分别是追问、方案推导、检查用的 agent；<code>web/</code> 是浏览器界面的服务端，<code>chat.py</code> 是界面里的几段对话，<code>playground.py</code> 是「试玩」</td></tr>
-<tr><td><a href="https://github.com/hubooooooo/agent-workshop/tree/main/web">web/</a></td><td>浏览器界面源码（React + assistant-ui），构建产物提交在 <code>blueprint/web/static/</code></td></tr>
+<tr><td><a href="https://github.com/Xtbreak/agent-workshop/tree/main/web">web/</a></td><td>浏览器界面源码（React + assistant-ui），构建产物提交在 <code>blueprint/web/static/</code></td></tr>
 <tr><td><code>s01</code>–<code>s17</code></td><td>17 个组件的说明、参考实现与图示</td></tr>
 <tr><td><a href="common/">common/</a></td><td>组件参考实现共用的启动层</td></tr>
 <tr><td><a href="scaffold/">scaffold/</a> · <a href="skills/">skills/</a></td><td>项目模板；构建 Agent、代码检查等技能</td></tr>
@@ -376,6 +376,6 @@ macOS 14 及更早的版本更简单：按住 Control 键点启动文件，选�
 
 <div align="center">
 
-作者：**Hubo** · [MIT 许可证](LICENSE) · [教程视频](https://www.bilibili.com/video/BV17RtD61ETm/)
+作者：**[Xtbreak](https://github.com/Xtbreak)** · [MIT 许可证](LICENSE) · [教程视频](https://www.bilibili.com/video/BV17RtD61ETm/)
 
 </div>
